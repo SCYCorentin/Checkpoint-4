@@ -17,6 +17,8 @@
   },
   "plugins": ["react", "import"],
   "rules": {
+    "camelcase": "off",
+    "no-use-before-define": "off",
     "react/prop-types": "off",
     "array-callback-return": "off",
     "consistent-return": "off",
