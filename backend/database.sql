@@ -25,16 +25,22 @@ CREATE TABLE IF NOT EXISTS `corsair`.`city` (
   `cityplace` VARCHAR(255) NOT NULL,
   PRIMARY KEY (`id`));
 
+insert into city (cityplace) values ('Paris');
+insert into city (cityplace) values ('Marseille');
+insert into city (cityplace) values ('Nantes');
+
+
+
 
 -- -----------------------------------------------------
 -- Table `corsair`.`coworkingplaces`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `corsair`.`coworkingplaces` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(45) NOT NULL,
-  `hoursopen` VARCHAR(45) NOT NULL,
+  `name` VARCHAR(255) NOT NULL,
+  `hoursopen` VARCHAR(255) NOT NULL,
   `feedback` VARCHAR(255) NOT NULL,
-  `services` VARCHAR(45) NOT NULL,
+  `services` VARCHAR(255) NOT NULL,
   `city_id` INT NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_coworkingplaces_city_idx` (`city_id` ASC) VISIBLE,
@@ -43,6 +49,10 @@ CREATE TABLE IF NOT EXISTS `corsair`.`coworkingplaces` (
     REFERENCES `corsair`.`city` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
+
+insert into coworkingplaces (`name`, `hoursopen`, `feedback`, `services`, `city_id`) values ('Startway Coworking Paris Sentier', 'De 9h00 à 18h00 !', 'Très bon endroit de coworking, 95% de notes positives.', 'Nous proposons un endroit détente, une salle de réunion et une salle de sport !', 1);
+insert into coworkingplaces (`name`, `hoursopen`, `feedback`, `services`, `city_id`) values ('MOZAIK Coworking Spaces Chaussée Antin', 'De 8h00 à 17h30 !', 'Joli endroit de coworking, 90% de notes positives.', 'Salle de sport, SPA et même des macbooks !', 2);
+
 
 
 SET SQL_MODE=@OLD_SQL_MODE;

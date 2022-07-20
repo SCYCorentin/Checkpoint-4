@@ -28,6 +28,56 @@ class CoworkingplaceController {
         res.sendStatus(500);
       });
   };
+
+  static edit = (req, res) => {
+    const coworkingplaces = req.body;
+
+    // TODO validations (length, format...)
+
+    coworkingplaces.id = parseInt(req.params.id, 10);
+
+    models.coworkingplaces
+      .update(coworkingplaces)
+      .then(([result]) => {
+        if (result.affectedRows === 0) {
+          res.sendStatus(404);
+        } else {
+          res.sendStatus(204);
+        }
+      })
+      .catch((err) => {
+        console.error(err);
+        res.sendStatus(500);
+      });
+  };
+
+  static add = (req, res) => {
+    const coworkingplaces = req.body;
+
+    // TODO validations (length, format...)
+
+    models.coworkingplaces
+      .insert(coworkingplaces)
+      .then(([result]) => {
+        res.status(201).send({ ...coworkingplaces, id: result.insertId });
+      })
+      .catch((err) => {
+        console.error(err);
+        res.sendStatus(500);
+      });
+  };
+
+  static delete = (req, res) => {
+    models.coworkingplaces
+      .delete(req.params.id)
+      .then(() => {
+        res.sendStatus(204);
+      })
+      .catch((err) => {
+        console.error(err);
+        res.sendStatus(500);
+      });
+  };
 }
 
 module.exports = CoworkingplaceController;

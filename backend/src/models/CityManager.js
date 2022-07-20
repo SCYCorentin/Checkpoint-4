@@ -3,17 +3,17 @@ const AbstractManager = require("./AbstractManager");
 class CityManager extends AbstractManager {
   static table = "city";
 
-  insert(item) {
+  insert(city) {
     return this.connection.query(
-      `insert into ${CityManager.table} (title) values (?)`,
-      [item.title]
+      `insert into ${this.table} (cityplace) values ( ? )`,
+      [city.cityplace]
     );
   }
 
-  update(item) {
+  update(city) {
     return this.connection.query(
-      `update ${CityManager.table} set title = ? where id = ?`,
-      [item.title, item.id]
+      `update ${this.table} set cityplace = ? where id = ?`,
+      [city.cityplace, city.id]
     );
   }
 }
