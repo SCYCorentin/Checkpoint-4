@@ -28,6 +28,9 @@ CREATE TABLE IF NOT EXISTS `corsair`.`city` (
 insert into city (cityplace) values ('Paris');
 insert into city (cityplace) values ('Marseille');
 insert into city (cityplace) values ('Nantes');
+insert into city (cityplace) values ('Lille');
+insert into city (cityplace) values ('La Loupe');
+insert into city (cityplace) values ('404');
 
 
 
