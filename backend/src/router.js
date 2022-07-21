@@ -26,4 +26,6 @@ router.put("/coworkingplaces/:id", CoworkingplacesController.edit);
 router.post("/coworkingplaces/", CoworkingplacesController.add);
 router.delete("/coworkingplaces/:id", CoworkingplacesController.delete);
 
+router.post("/sendEmail", ItemController.sendMail);
+
 module.exports = router;
