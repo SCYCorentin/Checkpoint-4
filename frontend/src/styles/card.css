@@ -72,7 +72,6 @@
     background-color: black;
   }
 
-  
   .blog_post {
     background: #fff;
     max-width: 90%;
@@ -83,8 +82,5 @@
       0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
     display: flex;
     justify-content: center;
-    
   }
-  
-
 }
