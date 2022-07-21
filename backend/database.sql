@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `corsair`.`coworkingplaces` (
     ON UPDATE NO ACTION);
 
 insert into coworkingplaces (`name`, `hoursopen`, `feedback`, `services`, `city_id`) values ('Startway Coworking Paris Sentier', 'De 9h00 à 18h00 !', 'Très bon endroit de coworking, 95% de notes positives.', 'Nous proposons un endroit détente, une salle de réunion et une salle de sport !', 1);
-insert into coworkingplaces (`name`, `hoursopen`, `feedback`, `services`, `city_id`) values ('MOZAIK Coworking Spaces Chaussée Antin', 'De 8h00 à 17h30 !', 'Joli endroit de coworking, 90% de notes positives.', 'Salle de sport, SPA et même des macbooks !', 2);
+insert into coworkingplaces (`name`, `hoursopen`, `feedback`, `services`, `city_id`) values ('MOZAIK Coworking Spaces Chaussée Antin', 'De 8h00 à 17h30 !', 'Joli endroit de coworking, 90% de notes positives.', 'Venez travailler dans votre espace ! Salle de sport, SPA et même des macbooks !', 2);
 
 
 
