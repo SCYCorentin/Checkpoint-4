@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Card from "../components/Card";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import Homecard from "../components/Homecard";
 import homeimg from "../assets/images/homedrop.jpg";
 import homeimg3 from "../assets/images/home3.png";
@@ -71,6 +72,7 @@ export default function App() {
               })}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
