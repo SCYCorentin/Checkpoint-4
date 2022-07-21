@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Card from "../components/Card";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import Homecard from "../components/Homecard";
 import homeimg from "../assets/images/homedrop.jpg";
 import homeimg3 from "../assets/images/home3.png";
@@ -26,7 +27,7 @@ export default function App() {
       <div className="fullhome">
         <div className="desktopdiv">
           <h1 className="home">
-            Trouver un espace de coworking professionnel deviens{" "}
+            Trouver un espace de coworking professionnel deviens
             <span className="h1color">&nbsp;simple et rapide !</span>
           </h1>
         </div>
@@ -48,7 +49,7 @@ export default function App() {
             onChange={(e) => setText(e.target.value)}
           />
           <input
-            className="searchinput"
+            className="searchinput2"
             placeholder="Je recherche un service"
             type="text"
             onChange={(e) => setFilter(e.target.value)}
@@ -71,6 +72,7 @@ export default function App() {
               })}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

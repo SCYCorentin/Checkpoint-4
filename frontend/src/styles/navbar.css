@@ -70,7 +70,7 @@ a {
 @media screen and (max-width: 700px) {
   .Logo {
     display: flex;
-    width: 100px;
+    width: 150px;
   }
   .links a {
     color: rgb(82, 82, 82);
@@ -95,7 +95,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .nav-header > a {
@@ -104,7 +104,7 @@ nav {
 }
 
 .nav-toggle {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: rgb(19, 19, 19);
   background: transparent;
   border-color: transparent;
@@ -131,6 +131,10 @@ nav {
 
 .show-container {
   height: 10rem;
+}
+
+ul.links {
+  padding-left: 0;
 }
 
 @media screen and (min-width: 800px) {
