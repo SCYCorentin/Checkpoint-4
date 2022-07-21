@@ -3,6 +3,12 @@ const AbstractManager = require("./AbstractManager");
 class CoworkingplaceManager extends AbstractManager {
   static table = "coworkingplaces";
 
+  findAll() {
+    return this.connection.query(
+      `SELECT * from ${this.table} INNER JOIN city ON ${this.table}.city_id = city.id`
+    );
+  }
+
   insert(coworkingplaces) {
     return this.connection.query(
       `insert into ${this.table} (name, hoursopen, feedback, services, city_id) values ( ?, ?, ?, ?, ? )`,
