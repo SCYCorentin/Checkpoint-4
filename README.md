@@ -2,7 +2,7 @@
 
 # Maquette Figma
 Accessible depuis le [dossier ressources](https://github.com/SCYCorentin/Checkpoint-4/tree/master/frontend/src/ressources)
-![Maquette](((http://image.noelshack.com/fichiers/2022/29/5/1658491980-maquette1.png)](http://image.noelshack.com/fichiers/2022/29/5/1658491860-maquette2.png))
+![Maquette](http://image.noelshack.com/fichiers/2022/29/5/1658491980-maquette1.png)(http://image.noelshack.com/fichiers/2022/29/5/1658491860-maquette2.png)
 
 # Base de données modélisée
 Réalisée grâce à Workbench/MySQL
