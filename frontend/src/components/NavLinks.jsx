@@ -6,24 +6,18 @@ const links = [
     url: "/",
     text: "Accueil",
   },
-
   {
     id: 2,
-    url: "/Where",
+    url: "/",
     text: "Je trouve mon espace",
   },
   {
     id: 3,
-    url: "/Who",
-    text: "Qui sommes nous ?",
-  },
-  {
-    id: 4,
     url: "/Contact",
     text: "Nous contacter",
   },
   {
-    id: 5,
+    id: 4,
     url: "/Faq",
     text: "FAQ",
   },
