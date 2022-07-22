@@ -2,3 +2,18 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.crudtitle {
+  font-family: "Montserrat", sans-serif;
+}
+
+.parentcrud {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20vh;
+}
+
+.parentcrud2 {
+  display: flex;
+  flex-direction: column;
+}

@@ -39,40 +39,54 @@ export default function Admin() {
   };
   return (
     <div className="App">
-      <input
-        placeholder="Type..."
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <input
-        placeholder="Type..."
-        value={hoursopen}
-        onChange={(e) => setHoursOpen(e.target.value)}
-      />
-      <input
-        placeholder="Type..."
-        value={feedback}
-        onChange={(e) => setFeedback(e.target.value)}
-      />
-      <input
-        placeholder="Type..."
-        value={services}
-        onChange={(e) => setServices(e.target.value)}
-      />
-      <input
-        placeholder="Type..."
-        value={city_id}
-        onChange={(e) => setCity_id(e.target.value)}
-      />
-      <button onClick={postName}>Submit</button>
-      {api.map((val) => {
-        return (
-          <>
-            <p>{val.name}</p>
-            <button onClick={() => delName(val.id)}>Del</button>
-          </>
-        );
-      })}
+      <h1 className="crudtitle">Corsair - Création et suppression d'espace</h1>
+      <div className="parentcrud">
+        <div className="parentcrud2">
+          <h2 className="titleset">Nom de l'espace</h2>
+          <input
+            placeholder="Type..."
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <h2 className="titleset">Horaires</h2>
+          <input
+            placeholder="Type..."
+            value={hoursopen}
+            onChange={(e) => setHoursOpen(e.target.value)}
+          />
+          <h2 className="titleset">Feedback (Non obligatoire)</h2>
+          <input
+            placeholder="Type..."
+            value={feedback}
+            onChange={(e) => setFeedback(e.target.value)}
+          />
+          <h2 className="titleset">Description de l'espace</h2>
+          <input
+            placeholder="Type..."
+            value={services}
+            onChange={(e) => setServices(e.target.value)}
+          />
+          <h2 className="titleset">City_id</h2>
+          <input
+            placeholder="Type..."
+            value={city_id}
+            onChange={(e) => setCity_id(e.target.value)}
+          />
+          <button className="addnew" onClick={postName}>
+            J'envoie ma requête
+          </button>
+        </div>
+        <div className="childcrud">
+          {api.map((val) => {
+            return (
+              <>
+                <p>{val.name}</p>
+                <button onClick={() => delName(val.id)}>Supprimer</button>
+              </>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 }

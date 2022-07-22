@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `corsair`.`coworkingplaces` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(255) NOT NULL,
   `hoursopen` VARCHAR(255) NOT NULL,
-  `feedback` VARCHAR(255) NOT NULL,
+  `feedback` VARCHAR(255),
   `services` VARCHAR(255) NOT NULL,
   `city_id` INT NOT NULL,
   PRIMARY KEY (`id`),
