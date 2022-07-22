@@ -3,7 +3,7 @@ import ContactImage from "../assets/images/contactpage.jpg";
 import "../styles/contactform.css";
 
 function ContactForm() {
-  const [status, setStatus] = useState("Submit");
+  const [status, setStatus] = useState("J'envoie mon message");
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Envoi en cours...");
@@ -25,7 +25,7 @@ function ContactForm() {
         body: JSON.stringify(details),
       }
     );
-    setStatus("Submit");
+    setStatus("J'envoie mon message");
     const result = await response.json();
     alert(result.status);
   };
