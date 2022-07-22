@@ -10,11 +10,18 @@
     "fix": "prettier --write . && eslint --fix --ext .jsx ."
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "axios": "^0.27.2",
+    "mdb-react-ui-kit": "^4.1.0",
     "prop-types": "^15.8.1",
     "react": "^18.0.0",
+    "react-bootstrap": "^2.4.0",
     "react-dom": "^18.0.0",
+    "react-faq-acordion": "^0.1.31",
     "react-icons": "^4.4.0",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "react-transition-group": "^4.4.2"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",

@@ -30,14 +30,14 @@ class CityController {
   };
 
   static add = (req, res) => {
-    const city = req.body;
+    const cityplace = req.body;
 
     // TODO validations (length, format...)
 
     models.city
-      .insert(city)
+      .insert(cityplace)
       .then(([result]) => {
-        res.status(201).send({ ...city, id: result.insertId });
+        res.status(201).send({ ...cityplace, id: result.insertId });
       })
       .catch((err) => {
         console.error(err);

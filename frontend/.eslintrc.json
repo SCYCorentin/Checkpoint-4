@@ -17,7 +17,14 @@
   },
   "plugins": ["react", "import"],
   "rules": {
+    "camelcase": "off",
+    "no-use-before-define": "off",
+    "react/no-array-index-key": "off",
+    "react/prop-types": "off",
+    "array-callback-return": "off",
+    "consistent-return": "off",
     "no-console": "off",
+    "no-unused-expressions": "off",
     "no-restricted-syntax": [
       "error",
       {
@@ -26,6 +33,7 @@
       }
     ],
     "react/react-in-jsx-scope": "off",
+    "react/destructuring-assignment": "off",
     "react/button-has-type": "off",
     "react/jsx-one-expression-per-line": "off",
     "react/no-unescaped-entities": "off",

@@ -5,7 +5,7 @@ class CityManager extends AbstractManager {
 
   insert(city) {
     return this.connection.query(
-      `insert into ${this.table} (cityplace) values ( ? )`,
+      `insert into ${this.table} (cityplace) values (?)`,
       [city.cityplace]
     );
   }
