@@ -40,7 +40,9 @@ export default function App() {
             <Homecard />
           </div>
         </div>
-        <img className="homeimg" src={homeimg} alt={homeimg} />
+        <div className="mobileimg">
+          <img className="homeimg" src={homeimg} alt={homeimg} />
+        </div>
         <div className="searching">
           <input
             className="searchinput"
